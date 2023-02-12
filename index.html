@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" href="favicon.svg">
+	<title>whitipet</title>
+	<meta name="author" content="whitipet">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,500,700|Roboto+Mono:500">
+
+	<style>
+		@media (prefers-color-scheme: light) {
+			html {
+				color: #000;
+			}
+
+			body {
+				background-color: #fff;
+				background-image: url("bg_l.svg");
+			}
+
+			.photo {
+				border-color: #0000001A;
+			}
+
+			.links a {
+				color: #000;
+			}
+		}
+
+		@media (prefers-color-scheme: dark) {
+			html {
+				color: #fff;
+			}
+
+			body {
+				background-color: #000;
+				background-image: url("bg_d.svg");
+			}
+
+			.photo {
+				border-color: #ffffff1A;
+			}
+
+			.links a {
+				color: #fff;
+			}
+		}
+
+		html {
+			height: 100%;
+			font-family: "Roboto", serif;
+		}
+
+		body {
+			min-height: 100%;
+			margin: auto;
+
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			justify-items: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+		}
+
+		body {
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: center;
+			background-size: contain;
+		}
+
+		.photo {
+			width: 224px;
+			height: 224px;
+
+			border-width: 1px;
+			border-style: solid;
+			border-radius: 50%;
+		}
+
+		.name,
+		.nickname {
+			margin: 0;
+
+			font-weight: 500;
+		}
+
+		.name {
+			margin-top: 16px;
+
+			font-size: 2.5em;
+		}
+
+		.nickname {
+			margin-top: 8px;
+
+			font-family: "Roboto Mono", serif;
+		}
+
+		.links {
+			margin-top: 8px;
+
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+
+			font-weight: 300;
+			font-size: 1.8em;
+		}
+
+		.links a {
+			margin: 8px;
+			padding: 8px;
+
+			text-decoration: none;
+		}
+
+		.links a:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+
+<body>
+	<img class="photo" src="photo.jpg" alt="Photo" loading="lazy">
+	<h1 class="name">Petro Bilyi</h1>
+	<h2 class="nickname">@whitipet</h2>
+	<div class="links">
+		<a href="https://github.com/whitipet"><b>G</b>itHub</a>
+		<a href="https://twitter.com/whitipet"><b>T</b>witter</a>
+		<a href="https://www.figma.com/@whitipet"><b>F</b>igma</a>
+	</div>
+</body>
+
+</html>
